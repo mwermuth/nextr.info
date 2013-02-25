@@ -1,0 +1,219 @@
+@include respond-to(mobile) {
+
+#howitworks{
+display:none;
+}
+#howitworks2{
+display:none;
+}
+
+#close1{
+display:none;
+}
+
+#close2{
+display:none;
+}
+
+#features{
+display:none;
+}
+
+#map{
+display:none;
+}
+
+
+#hand{
+display:none;
+width:80%;
+height:528px;
+float: none;
+margin: 0 auto;
+margin-top:200px;
+max-width:400px;
+min-width:400px;
+background-size:80%;
+
+background:url(../images/hand-header.png) no-repeat bottom;
+
+}
+
+#hand2{
+display:block !important;
+width:100%;
+height:528px;
+float: none;
+margin: 0 auto;
+margin-top:-151px;
+max-width:370px;
+min-width:370px;
+background-size:95%;
+
+
+}
+
+.hero{
+
+margin-top:40px;
+margin-left:40px;
+
+}
+
+#social-links{
+}
+
+#social-download{
+width: 100%;
+margin: 0 auto;
+float: none;
+max-width: 180px;
+min-width: 180px;
+background-size: 100%;
+margin-top: 10px;
+
+	&:hover {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+		max-width: 180px;
+		min-width: 180px;
+		background-size: 100%;
+		margin-top: 10px;
+	}
+	
+	&:active {
+	
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+	max-width: 180px;
+	min-width: 180px;
+	background-size: 100%;
+	margin-top: 10px;
+	}
+
+}
+
+#social-facebook{
+width: 100%;
+margin: 0 auto;
+float: none;
+max-width: 35px;
+min-width: 35px;
+background-size: 100%;
+margin-top: 10px;
+
+	&:hover {
+	
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+	max-width: 35px;
+	min-width: 35px;
+	background-size: 100%;
+	margin-top: 10px;
+	}
+	
+	&:active {
+	
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+	max-width: 35px;
+	min-width: 35px;
+	background-size: 100%;
+	margin-top: 10px;
+	}
+}
+
+#social-twitter{
+width: 100%;
+margin: 0 auto;
+float: none;
+max-width: 35px;
+min-width: 35px;
+background-size: 100%;
+margin-top: 10px;
+
+	&:hover {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+		max-width: 35px;
+		min-width: 35px;
+		background-size: 100%;
+		margin-top: 10px;
+	}
+	
+	&:active {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+		max-width: 35px;
+		min-width: 35px;
+		background-size: 100%;
+		margin-top: 10px;
+	}
+}
+
+#appstore{
+background-position: -930px center;
+}
+
+#nextrappbutton {
+margin-left: 180px;
+margin-top: 270px;
+}
+
+#appstore-text{
+	margin-left:100px;
+	
+	> h1{
+		font-size: 25px;
+		margin-bottom:5px;
+	}
+	
+	> p{
+		width:100%;
+		font-size:13px;
+	}
+}
+
+#nextr-footer{
+margin-top:30px;
+margin-left:0px;
+
+}
+
+.footer-header{
+
+	> img{
+		width: 16px;
+		height: 11px;
+		position: relative;
+		top: 8px;
+		left: 0px;
+	}
+	
+	> h1{
+		margin-left: 30px;
+		color: white;
+		font-size: 20px;
+	
+	}
+
+}
+
+#footer-feedback{
+	font-size: 12px;
+	margin-bottom: 0px;
+
+}
+
+#footer-claimer{
+	font-size: 8px;
+	
+
+}
+}
