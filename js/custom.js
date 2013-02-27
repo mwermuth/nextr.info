@@ -160,6 +160,7 @@
   $("#close1").click(function()
    {
 		 if($("#howitworks").is(":visible")){
+			 $("#howitworks").removeClass("show-on-desktop");
 			 $("#howitworks").slideUp();
 			 $("#home-close img").rotate(180);
 			 $("#home-close h1").css("color","black");
@@ -168,14 +169,15 @@
 			 $("#howitworks").slideDown();
 			 $("#home-close img").rotate(0);
 			 $("#home-close h1").css("color","#a3a3a3");
+			 $("#howitworks").addClass("show-on-desktop");
 		 }
    });
 	 
 	 
    $("#close2").click(function()
     {
-			if($(document).width() > 768){
 	 		 if($("#howitworks2").is(":visible")){
+				 $("#howitworks2").removeClass("show-on-desktop");
 	 			 $("#howitworks2").slideUp();
 				 $("#verbindungen-close img").rotate(180);
 				 $("#verbindungen-close h1").css("color","black");
@@ -186,8 +188,8 @@
 				 $("#verbindungen-close img").rotate(0);
 				 $("#verbindungen-close h1").css("color","#a3a3a3");
 				 $("#close2").removeClass("grey-grad");
+				 $("#howitworks2").addClass("show-on-desktop");
 	 		 }
-	 	}
     });
 	
 	

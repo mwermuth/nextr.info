@@ -155,6 +155,9 @@ color: #ffffff;
 width:620px;
 height:728px;
 background:url(../images/hand-header.png) no-repeat bottom;
+max-width: 480px;
+min-width: 350px;
+background-size: 100%;
 }
 
 #hand2{
@@ -259,16 +262,17 @@ position:absolute;
 margin:0px auto;
 margin-top: 50px;
 display:block;
-width:470px;
-height:702px;
+width:50%;
+max-width:470px;
 z-index:1;
 }
 
 
 
 #how-right{
-margin-top:290px;
-width:230px;
+margin-top:80%;
+width:50%;
+max-width:230px;
 float:right;
 
 }
@@ -302,7 +306,7 @@ margin-right:20px;
 }
 
 #suche{
-margin-left:0px;
+margin-left:20px;
 		font-family:"DINPro-Regular";
 		color: #a3a3a3;
 		
@@ -313,7 +317,7 @@ margin-left:0px;
 
 #bringmehome{
 margin-top:130px;
-margin-left:8px;
+margin-left:38px;
 		font-family:"DINPro-Regular";
 		color: #a3a3a3;
 		
@@ -324,8 +328,8 @@ margin-left:8px;
 }
 
 #nextrbutton{
-margin-top:80px;
-margin-left:10px;
+margin-top:60px;
+margin-left:40px;
 		font-family:"DINPro-Regular";
 		color: #a3a3a3;
 		
@@ -378,6 +382,7 @@ margin-right:70px;
 	height:750px;
 	position:relative;
 	margin: 0 auto;
+	
 	#iphone2{
 	position:absolute;
 	margin:0px auto;
@@ -403,7 +408,7 @@ float:right;
 
 #how-left2{
 margin-top:330px;
-margin-left:150px;
+margin-left:30px;
 width:200px;
 float:left;
 
@@ -468,9 +473,24 @@ text-align:center;
 
 }
 
+#map-text{
+	margin-top:35px;
+	
+	> h1{
+		font-family:"DINPro-Regular";
+		font-size: 48px;
+	}
+	
+	> p{
+		font-size: 18px;
+		font-family:"DINPro-Regular";	
+		background-color:white;
+	}
+}
+
 #map{
 background: url(../images/map-bg.png) no-repeat;
-background-position: center center;
+background-position: 40% center;
 
   -webkit-background-size: cover; 
     -moz-background-size:cover; 
@@ -481,10 +501,22 @@ background-position: center center;
 }
 
 #stations{
-margin-top:20%;
-margin-left:100px;
+margin-top:250px;
 float:none;
 }
+
+.vicon{
+
+		width: 60px;
+		height: 60px;
+}
+
+.hicon{
+
+		width: 100px;
+		height: 50px;
+}
+
 
 #stations div.span3{
 padding:0;
@@ -497,7 +529,12 @@ float:left;
 #stations ul{
 		@include list-reset();
 		@include list-horizontal();
-		float:right;
+		margin-left: 25%;
+		margin-right: auto;
+		> li{
+				margin-right:120px;
+				margin-top:10px;
+		}
 		> li #hover{
 				display:none;
 			> a {
@@ -602,6 +639,7 @@ font-family:"DINPro-Regular";
 #who{
 float:left;
 margin-top:70px;
+margin-left:0px;
 
 	#mwermuth{
 		margin-top:20px;
@@ -614,7 +652,7 @@ margin-top:70px;
 	}
 	
 	ul > li{
-		margin-left:7px;
+		margin-right:7px;
 	}
 	
 	#footer-facebook{

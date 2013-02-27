@@ -43,8 +43,8 @@ img {
 
 .row {
 	@include clearfix();
-	margin-left: -($column-gutter / 2);
-	margin-right: -($column-gutter / 2);
+	//margin-left: -($column-gutter / 2);
+	//margin-right: -($column-gutter / 2);
 }
 
 

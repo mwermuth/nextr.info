@@ -152,7 +152,7 @@ img.native-width {
   display: none !important;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 758px) {
   .show-on-mobile {
     display: inherit !important;
   }
@@ -170,7 +170,7 @@ img.native-width {
     display: none !important;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1340px) {
+@media screen and (min-width: 759px) and (max-width: 1340px) {
   .show-on-tablet {
     display: inherit !important;
   }
@@ -179,7 +179,7 @@ img.native-width {
     display: none !important;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 759px) {
   .show-on-tablet-desktop {
     display: inherit !important;
   }
@@ -623,13 +623,13 @@ img {
   width: auto;
   max-width: 1340px;
 }
-@media screen and (min-width: 1025px) and (max-width: 1340px) {
+@media screen and (min-width: 759px) and (max-width: 1340px) {
   .responsive .container {
     margin: 0;
     padding: 0 0px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 758px) {
   .responsive .container {
     margin: 0;
     padding: 0 0px;
@@ -638,8 +638,6 @@ img {
 
 .row {
   zoom: 1;
-  margin-left: -35px;
-  margin-right: -35px;
 }
 .row:before, .row:after {
   content: "";
@@ -649,7 +647,7 @@ img {
   clear: both;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 758px) {
   .responsive .row {
     margin-left: 0;
     margin-right: 0;
@@ -671,7 +669,7 @@ img {
   padding: 0 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 758px) {
   .responsive .field-row {
     margin-left: 0;
     margin-right: 0;
@@ -690,7 +688,7 @@ img {
   float: right;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 758px) {
   .responsive [class*="span"] {
     float: none;
     width: 100%;
@@ -1006,7 +1004,7 @@ textarea {
   margin-right: 5px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 758px) {
   .labels-left .field-group {
     zoom: 1;
   }
@@ -1749,7 +1747,7 @@ input::-moz-focus-inner {
 }
 .top-bar .top-bar-links > li > a {
   display: block;
-  width: 90px;
+  width: 80px;
   text-align: center;
   margin-left: 50px;
   padding: 29px 14px;
@@ -1848,7 +1846,7 @@ input::-moz-focus-inner {
   z-index: 5000;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 758px) {
   #nav-collapse {
     display: none;
     position: absolute;
@@ -2369,6 +2367,9 @@ p#subhero {
   width: 620px;
   height: 728px;
   background: url(../images/hand-header.png) no-repeat bottom;
+  max-width: 480px;
+  min-width: 350px;
+  background-size: 100%;
 }
 
 #hand2 {
@@ -2474,14 +2475,15 @@ p#subhero {
   margin: 0px auto;
   margin-top: 50px;
   display: block;
-  width: 470px;
-  height: 702px;
+  width: 50%;
+  max-width: 470px;
   z-index: 1;
 }
 
 #how-right {
-  margin-top: 290px;
-  width: 230px;
+  margin-top: 80%;
+  width: 50%;
+  max-width: 230px;
   float: right;
 }
 
@@ -2510,7 +2512,7 @@ p#subhero {
 }
 
 #suche {
-  margin-left: 0px;
+  margin-left: 20px;
   font-family: "DINPro-Regular";
   color: #a3a3a3;
 }
@@ -2520,7 +2522,7 @@ p#subhero {
 
 #bringmehome {
   margin-top: 130px;
-  margin-left: 8px;
+  margin-left: 38px;
   font-family: "DINPro-Regular";
   color: #a3a3a3;
 }
@@ -2529,8 +2531,8 @@ p#subhero {
 }
 
 #nextrbutton {
-  margin-top: 80px;
-  margin-left: 10px;
+  margin-top: 60px;
+  margin-left: 40px;
   font-family: "DINPro-Regular";
   color: #a3a3a3;
 }
@@ -2595,7 +2597,7 @@ p#subhero {
 
 #how-left2 {
   margin-top: 330px;
-  margin-left: 150px;
+  margin-left: 30px;
   width: 200px;
   float: left;
 }
@@ -2651,9 +2653,22 @@ p#subhero {
   color: #a3a3a3;
 }
 
+#map-text {
+  margin-top: 35px;
+}
+#map-text > h1 {
+  font-family: "DINPro-Regular";
+  font-size: 48px;
+}
+#map-text > p {
+  font-size: 18px;
+  font-family: "DINPro-Regular";
+  background-color: white;
+}
+
 #map {
   background: url(../images/map-bg.png) no-repeat;
-  background-position: center center;
+  background-position: 40% center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2662,9 +2677,18 @@ p#subhero {
 }
 
 #stations {
-  margin-top: 20%;
-  margin-left: 100px;
+  margin-top: 250px;
   float: none;
+}
+
+.vicon {
+  width: 60px;
+  height: 60px;
+}
+
+.hicon {
+  width: 100px;
+  height: 50px;
 }
 
 #stations div.span3 {
@@ -2678,7 +2702,8 @@ p#subhero {
 #stations ul {
   margin-left: 0px;
   zoom: 1;
-  float: right;
+  margin-left: 25%;
+  margin-right: auto;
 }
 #stations ul > li {
   display: block;
@@ -2695,6 +2720,10 @@ p#subhero {
   display: block;
   float: left;
   list-style-type: none;
+}
+#stations ul > li {
+  margin-right: 120px;
+  margin-top: 10px;
 }
 #stations ul > li #hover {
   display: none;
@@ -2785,6 +2814,7 @@ footer {
 #who {
   float: left;
   margin-top: 70px;
+  margin-left: 0px;
 }
 #who #mwermuth {
   margin-top: 20px;
@@ -2810,7 +2840,7 @@ footer {
   list-style-type: none;
 }
 #who ul > li {
-  margin-left: 7px;
+  margin-right: 7px;
 }
 #who #footer-facebook {
   margin-top: 20px;
@@ -2837,31 +2867,146 @@ footer {
   background: url(../images/footer-twitter-push.png) no-repeat;
 }
 
-@media screen and (max-width: 1024px) {
-  #howitworks {
-    display: none;
+#mobile-iphone {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  width: 70%;
+  max-width: 394px;
+  z-index: 1;
+}
+
+.mobile-desc {
+  margin-bottom: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #a3a3a3;
+  font-family: "DINPro-Regular";
+}
+.mobile-desc > h3 {
+  font-family: "DINPro-Regular";
+}
+
+#howitworks2-mobile {
+  background-color: #f4f4f4;
+}
+
+@media screen and (min-width: 759px) and (max-width: 1340px) {
+  .top-bar .top-bar-links > li > a {
+    width: 60px;
+    padding: 29px 0px;
   }
 
-  #howitworks2 {
-    display: none;
+  #hand {
+    margin-left: -15%;
   }
 
-  #close1 {
-    display: none;
+  #social-links {
+    margin-left: 70px;
   }
 
-  #close2 {
-    display: none;
+  #social-download {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    max-width: 180px;
+    min-width: 180px;
+    background-size: 100%;
+    margin-top: 10px;
+  }
+  #social-download:hover {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    max-width: 180px;
+    min-width: 180px;
+    background-size: 100%;
+    margin-top: 10px;
+  }
+  #social-download:active {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    max-width: 180px;
+    min-width: 180px;
+    background-size: 100%;
+    margin-top: 10px;
   }
 
-  #features {
-    display: none;
+  #social-facebook {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    max-width: 35px;
+    min-width: 35px;
+    background-size: 100%;
+    margin-top: 10px;
+  }
+  #social-facebook:hover {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    max-width: 35px;
+    min-width: 35px;
+    background-size: 100%;
+    margin-top: 10px;
+  }
+  #social-facebook:active {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    max-width: 35px;
+    min-width: 35px;
+    background-size: 100%;
+    margin-top: 10px;
   }
 
-  #map {
-    display: none;
+  #social-twitter {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    max-width: 35px;
+    min-width: 35px;
+    background-size: 100%;
+    margin-top: 10px;
+  }
+  #social-twitter:hover {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    max-width: 35px;
+    min-width: 35px;
+    background-size: 100%;
+    margin-top: 10px;
+  }
+  #social-twitter:active {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    max-width: 35px;
+    min-width: 35px;
+    background-size: 100%;
+    margin-top: 10px;
   }
 
+  #appstore-text > h1 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  #appstore-text > p {
+    width: 60%;
+    font-size: 14px;
+  }
+
+  #nextr-footer {
+    margin-top: 40px;
+    margin-left: -40px;
+  }
+}
+@media screen and (max-width: 758px) {
   #hand {
     display: none;
     width: 80%;
@@ -2875,16 +3020,26 @@ footer {
     background: url(../images/hand-header.png) no-repeat bottom;
   }
 
+  #img-bg {
+    width: 100%;
+    height: 639px;
+  }
+
   #hand2 {
     display: block !important;
     width: 100%;
     height: 528px;
     float: none;
     margin: 0 auto;
-    margin-top: -151px;
-    max-width: 370px;
-    min-width: 370px;
+    margin-top: -95px;
+    margin-left: -10%;
+    max-width: 450px;
+    min-width: 350px;
     background-size: 95%;
+  }
+
+  header {
+    height: 450px;
   }
 
   .hero {
@@ -2976,30 +3131,95 @@ footer {
     margin-top: 10px;
   }
 
+  #map {
+    background-position: 38% center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 384px;
+  }
+
+  #stations {
+    margin-top: 200px;
+    float: none;
+  }
+
+  .vicon {
+    width: 60px;
+    height: 60px;
+  }
+
+  #stations ul {
+    margin-left: 0px;
+    zoom: 1;
+    margin-left: 10%;
+    margin-right: auto;
+  }
+  #stations ul > li {
+    display: block;
+    list-style-type: none;
+  }
+  #stations ul:before, #stations ul:after {
+    content: "";
+    display: table;
+  }
+  #stations ul:after {
+    clear: both;
+  }
+  #stations ul > li {
+    display: block;
+    float: left;
+    list-style-type: none;
+  }
+  #stations ul > li {
+    margin-right: 5px;
+  }
+  #stations ul > li #hover {
+    display: none;
+  }
+
   #appstore {
-    background-position: -930px center;
+    background: url(../images/appstore-bg-mobile.png) no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 601px;
   }
 
   #nextrappbutton {
-    margin-left: 180px;
+    margin-left: 50%;
     margin-top: 270px;
   }
 
-  #appstore-text {
-    margin-left: 100px;
-  }
   #appstore-text > h1 {
     font-size: 25px;
     margin-bottom: 5px;
+    margin-left: 30%;
   }
   #appstore-text > p {
-    width: 100%;
-    font-size: 13px;
+    width: 60%;
+    margin-left: 30%;
+    font-size: 14px;
   }
 
   #nextr-footer {
     margin-top: 30px;
     margin-left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  footer {
+    background: url(../images/footer-bg-mobile.png) no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 460px;
   }
 
   .footer-header > img {
@@ -3016,11 +3236,33 @@ footer {
   }
 
   #footer-feedback {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 0px;
   }
 
   #footer-claimer {
-    font-size: 8px;
+    font-size: 11px;
+  }
+
+  #who {
+    margin-top: 40px;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 20px;
+  }
+  #who #mwermuth {
+    margin-top: 2px;
+    margin-right: 10px;
+  }
+  #who #ober {
+    margin-right: 10px;
+  }
+  #who > img {
+    float: left;
+    width: 80px;
+  }
+  #who > ul {
+    margin-top: -20px;
+    float: left;
   }
 }

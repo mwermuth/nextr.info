@@ -1,27 +1,171 @@
+
+#mobile-iphone{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom:20px;
+margin-top: 50px;
+width:70%;
+max-width:394px;
+z-index:1;
+}
+
+.mobile-desc{
+margin-bottom:20px;
+width:70%;
+margin-left:auto;
+margin-right:auto;
+
+	> h3{
+		font-family:"DINPro-Regular";
+	}
+	
+	color: #a3a3a3;
+	font-family:"DINPro-Regular";
+	
+}
+
+
+#howitworks2-mobile{
+	background-color: #f4f4f4;
+
+
+}
+
+
+@include respond-to(tablet) {
+
+.top-bar .top-bar-links > li > a {
+	width:60px;
+	padding: 29px 0px;
+}
+
+#hand{
+margin-left:-15%;
+}
+
+#social-links{
+
+	margin-left:70px;
+}
+
+#social-download{
+width: 100%;
+margin: 0 auto;
+float: none;
+max-width: 180px;
+min-width: 180px;
+background-size: 100%;
+margin-top: 10px;
+
+	&:hover {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+		max-width: 180px;
+		min-width: 180px;
+		background-size: 100%;
+		margin-top: 10px;
+	}
+	
+	&:active {
+	
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+	max-width: 180px;
+	min-width: 180px;
+	background-size: 100%;
+	margin-top: 10px;
+	}
+
+}
+
+#social-facebook{
+width: 100%;
+margin: 0 auto;
+float: none;
+max-width: 35px;
+min-width: 35px;
+background-size: 100%;
+margin-top: 10px;
+
+	&:hover {
+	
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+	max-width: 35px;
+	min-width: 35px;
+	background-size: 100%;
+	margin-top: 10px;
+	}
+	
+	&:active {
+	
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+	max-width: 35px;
+	min-width: 35px;
+	background-size: 100%;
+	margin-top: 10px;
+	}
+}
+
+#social-twitter{
+width: 100%;
+margin: 0 auto;
+float: none;
+max-width: 35px;
+min-width: 35px;
+background-size: 100%;
+margin-top: 10px;
+
+	&:hover {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+		max-width: 35px;
+		min-width: 35px;
+		background-size: 100%;
+		margin-top: 10px;
+	}
+	
+	&:active {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+		max-width: 35px;
+		min-width: 35px;
+		background-size: 100%;
+		margin-top: 10px;
+	}
+}
+
+
+#appstore-text{
+	
+	> h1{
+		font-size: 25px;
+		margin-bottom:5px;
+	}
+	
+	> p{
+		width:60%;
+		font-size:14px;
+	}
+}
+
+#nextr-footer {
+margin-top: 40px;
+margin-left: -40px;
+}
+
+}
+
+
 @include respond-to(mobile) {
-
-#howitworks{
-display:none;
-}
-#howitworks2{
-display:none;
-}
-
-#close1{
-display:none;
-}
-
-#close2{
-display:none;
-}
-
-#features{
-display:none;
-}
-
-#map{
-display:none;
-}
 
 
 #hand{
@@ -39,17 +183,30 @@ background:url(../images/hand-header.png) no-repeat bottom;
 
 }
 
+#img-bg{
+
+	  width:100%;
+	  height:639px;
+}
+
+
 #hand2{
 display:block !important;
 width:100%;
 height:528px;
 float: none;
 margin: 0 auto;
-margin-top:-151px;
-max-width:370px;
-min-width:370px;
+margin-top:-95px;
+margin-left:-10%;
+max-width:450px;
+min-width:350px;
 background-size:95%;
 
+
+}
+
+header{
+	height:450px;
 
 }
 
@@ -157,33 +314,98 @@ margin-top: 10px;
 	}
 }
 
-#appstore{
-background-position: -930px center;
+
+#map{
+background-position: 38% center;
+
+  -webkit-background-size: cover; 
+    -moz-background-size:cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+		
+	  height:384px;
 }
 
+#stations{
+margin-top:200px;
+float:none;
+}
+
+.vicon{
+
+		width: 60px;
+		height: 60px;
+}
+
+#stations ul{
+		@include list-reset();
+		@include list-horizontal();
+		margin-left: 10%;
+		margin-right: auto;
+		> li{
+			margin-right:5px;
+		}
+		> li #hover{
+				display:none;
+			> a {
+
+			}
+		}
+}
+
+
+
+#appstore{
+background: url(../images/appstore-bg-mobile.png) no-repeat;
+background-position: center center;
+
+  -webkit-background-size:cover; 
+    -moz-background-size:cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+
+height:601px;
+}
+
+
 #nextrappbutton {
-margin-left: 180px;
+margin-left: 50%;
 margin-top: 270px;
 }
 
 #appstore-text{
-	margin-left:100px;
 	
 	> h1{
 		font-size: 25px;
 		margin-bottom:5px;
+		margin-left:30%;
 	}
 	
 	> p{
-		width:100%;
-		font-size:13px;
+		width:60%;
+		margin-left:30%;
+		font-size:14px;
 	}
 }
 
 #nextr-footer{
 margin-top:30px;
 margin-left:0px;
+padding-left:20px;
+padding-right:20px;
 
+}
+
+footer{
+background: url(../images/footer-bg-mobile.png) no-repeat;
+background-position: center center;
+
+  -webkit-background-size:cover; 
+    -moz-background-size:cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+
+height:460px;
 }
 
 .footer-header{
@@ -206,14 +428,41 @@ margin-left:0px;
 }
 
 #footer-feedback{
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 0px;
 
 }
 
 #footer-claimer{
-	font-size: 8px;
+	font-size: 11px;
 	
+
+}
+
+#who{
+	margin-top:40px;
+	width:100%;
+	padding-right:10px;
+	padding-left:20px;
+	
+	#mwermuth{
+		margin-top:2px;
+		margin-right:10px;
+	}
+	
+	#ober{
+		margin-right:10px;
+	}
+
+	> img{
+		float: left;
+		width:80px;
+	}
+	
+	> ul {
+	margin-top:-20px;
+		float:left;
+	}
 
 }
 }
