@@ -26,7 +26,7 @@ height: 635px;
 }
 
 #page-header{
-margin-top:35px;
+margin-top:31px;
 }
 
 #img-bg{
@@ -108,26 +108,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', end
 
 .video-close{
   width:60px;
-	height:60px;
+  height:60px;
   float:right;
   text-align:center;
 }
 
 #video-play{
-  width: 100%;
-	max-width:90px;
+	width: 100%;
+ 	max-width:90px;
 	height:90px;
-  float:left;
-  text-align:center;
+	float:left;
+	text-align:center;
 	margin-right:20px;
-	background: url(../images/video-play.png) no-repeat;
+	background-image: url(../images/video-play.png);
+	
+	background-position: bottom; 
+	text-indent: -9999px;
+	-webkit-transition: background-position 0.0s ease; 
+	  -moz-transition: background-position 0.0s ease; 
+	  -ms-transition: background-position 0.0s ease; 
+	  transition: background-position 0.0s ease; 
+  	border-radius: 0px !important;
+  	-webkit-border-radius: 0px !important;
 	
 	&:hover {
-		background: url(../images/video-play-hover.png) no-repeat;
+		background-position: center;
 	}
 	
 	&:active {
-		background: url(../images/video-play-push.png) no-repeat;
+		background-position: top;
 	}
 }
 
@@ -155,7 +164,7 @@ color: #ffffff;
 width:620px;
 height:728px;
 background:url(../images/hand-header.png) no-repeat bottom;
-max-width: 480px;
+max-width: 560px;
 min-width: 350px;
 background-size: 100%;
 }
@@ -189,42 +198,69 @@ display: block;
 #social-download{
 width:260px;
 height:54px;
-	background: url(../images/social-download.png) no-repeat;
+	background-image: url(../images/social-download.png);
+	
+	background-position: bottom; 
+	text-indent: -9999px;
+	-webkit-transition: background-position 0.0s ease; 
+	  -moz-transition: background-position 0.0s ease; 
+	  -ms-transition: background-position 0.0s ease; 
+	  transition: background-position 0.0s ease; 
+  	border-radius: 0px !important;
+  	-webkit-border-radius: 0px !important;
 	
 	&:hover {
-		background: url(../images/social-download-hover.png) no-repeat;
+		background-position: center; 
 	}
 	
 	&:active {
-		background: url(../images/social-download-push.png) no-repeat;
+		background-position: top; 
 	}
 }
 
 #social-facebook{
 width:53px;
 height:54px;
-	background: url(../images/social-facebook.png) no-repeat;
+	background-image: url(../images/social-facebook.png);
+	
+	background-position: bottom; 
+	text-indent: -9999px;
+	-webkit-transition: background-position 0.0s ease; 
+	  -moz-transition: background-position 0.0s ease; 
+	  -ms-transition: background-position 0.0s ease; 
+	  transition: background-position 0.0s ease; 
+  	border-radius: 0px !important;
+  	-webkit-border-radius: 0px !important;
 
 	&:hover {
-		background: url(../images/social-facebook-hover.png) no-repeat;
+		background-position: center; 
 	}
 	
 	&:active {
-		background: url(../images/social-facebook-push.png) no-repeat;
+		background-position: top; 
 	}
 }
 
 #social-twitter{
 width:53px;
 height:54px;
-	background: url(../images/social-twitter.png) no-repeat;
-
+	background-image: url(../images/social-twitter.png);
+	
+	background-position: bottom; 
+	text-indent: -9999px;
+	-webkit-transition: background-position 0.0s ease; 
+	  -moz-transition: background-position 0.0s ease; 
+	  -ms-transition: background-position 0.0s ease; 
+	  transition: background-position 0.0s ease; 
+  	border-radius: 0px !important;
+  	-webkit-border-radius: 0px !important;
+	
 	&:hover {
-		background: url(../images/social-twitter-hover.png) no-repeat;
+		background-position: center; 
 	}
 	
 	&:active {
-		background: url(../images/social-twitter-push.png) no-repeat;
+		background-position: top; 
 	}
 }
 
@@ -257,6 +293,81 @@ padding:0 0 !important;
 
 }
 
+.description-left{
+	width:200px;
+}
+
+.description-right{
+	width:200px;
+	float:left !important;
+}
+
+.description-left2{
+	width:160px;
+}
+
+.description-right2{
+	width:160px;
+	float:left !important;
+}
+
+
+.center-description{
+	display:inline-block;
+}
+
+.center-row{
+	text-align:center;
+	width:100%;
+}
+
+#iphone-center{
+	margin-top: 60px;
+	margin-left:80px;
+	margin-right:80px;
+	background-image: url("../images/iphone-container.png");
+	display: block;
+	width: 312px;
+	height: 668px;
+}
+
+.hidden{
+	display:none;
+}
+
+#arrows{
+	background-image: url("../images/arrows.png");
+	display: block;
+    position: absolute;
+	background-repeat: no-repeat;
+	width:469px;
+	height:473px;
+	margin-left:-80px;
+	margin-top:90px;
+	z-index:0;
+}
+
+#app-screenshot{
+	display: block;
+	width: 268px;
+	height: 480px;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 94px;
+	left: 24px;
+}
+
+.screenhot-show{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+	z-index: 6;
+	opacity: 1;
+	width: 268px;
+	height: 20px;
+}
+
 #iphone{
 position:absolute;
 margin:0px auto;
@@ -270,22 +381,23 @@ z-index:1;
 
 
 #how-right{
-margin-top:80%;
-width:50%;
-max-width:230px;
+margin-top:300px;
+width:200px;
 float:right;
 
 }
 
 #how-left{
 margin-top:120px;
-width:220px;
+width:200px;
 float:left;
 
 }
 
 #haltestellen{
 			font-family:"DINPro-Regular";
+			cursor: hand; 
+			cursor: pointer; 
 		color: #a3a3a3;
 
 		>h3{
@@ -296,6 +408,8 @@ float:left;
 #datepicker{
 margin-top:130px;
 margin-right:20px;
+cursor: hand; 
+cursor: pointer; 
 		font-family:"DINPro-Regular";
 		color: #a3a3a3;
 		
@@ -306,7 +420,9 @@ margin-right:20px;
 }
 
 #suche{
-margin-left:20px;
+margin-left:-20px;
+cursor: hand; 
+cursor: pointer; 
 		font-family:"DINPro-Regular";
 		color: #a3a3a3;
 		
@@ -317,7 +433,9 @@ margin-left:20px;
 
 #bringmehome{
 margin-top:130px;
-margin-left:38px;
+margin-left:10px;
+cursor: hand; 
+cursor: pointer; 
 		font-family:"DINPro-Regular";
 		color: #a3a3a3;
 		
@@ -329,7 +447,9 @@ margin-left:38px;
 
 #nextrbutton{
 margin-top:60px;
-margin-left:40px;
+margin-left:10px;
+cursor: hand; 
+cursor: pointer; 
 		font-family:"DINPro-Regular";
 		color: #a3a3a3;
 		
@@ -388,34 +508,44 @@ margin-right:70px;
 	margin:0px auto;
 	margin-top: 50px;
 	display:block;
-	max-width:675px;
-	max-height:668px;
+	max-width:645px;
+	max-height:638px;
 	z-index:1;
 	}
 
 
 	#iphone-center2{
+		width:645px;
+		height:638px;
+		display:block;
 	}
 	
 }
 
+#iphone-over{
+	width:645px;
+	height:638px;
+
+}
+
 #how-right2{
-margin-top:290px;
-width:240px;
+margin-top:260px;
+width:160px;
 float:right;
 
 }
 
 #how-left2{
-margin-top:330px;
-margin-left:30px;
-width:200px;
+margin-top:310px;
+width:160px;
 float:left;
 
 }
 
 #verbindungen	{
 		font-family:"DINPro-Regular";
+		cursor: hand; 
+		cursor: pointer; 
 		color: #a3a3a3;
 		
 		> h3{
@@ -424,8 +554,10 @@ float:left;
 }
 
 #scroll	{
-margin-top:140px;
+margin-top:120px;
 margin-right:20px;
+cursor: hand; 
+cursor: pointer; 
 		font-family:"DINPro-Regular";
 		color: #a3a3a3;
 		
@@ -436,8 +568,10 @@ margin-right:20px;
 
 #detail{
 		font-family:"DINPro-Regular";
+		cursor: hand; 
+		cursor: pointer; 
 		color: #a3a3a3;
-		
+		margin-left:10px;
 		> h3{
 			font-family:"DINPro-Regular";
 		}
@@ -445,7 +579,9 @@ margin-right:20px;
 
 
 #close{
-margin-top:120px;
+margin-top:70px;
+margin-left:10px;
+
 		font-family:"DINPro-Regular";
 		color: #a3a3a3;
 		
@@ -529,45 +665,66 @@ float:left;
 #stations ul{
 		@include list-reset();
 		@include list-horizontal();
-		margin-left: 25%;
+		margin-left: 15%;
 		margin-right: auto;
 		> li{
-				margin-right:120px;
+				//margin-left:120px;
+			    display: inline;
+				margin-right:10px;
 				margin-top:10px;
 		}
-		> li #hover{
+		> li.hover{
 				display:none;
+				width:100px;
 			> a {
 
 			}
 		}
 }
 
+.hovercenter img{
+	display:inline;	
+}
+
+.hover{
+	width:110px;
+	visibility:hidden;
+}
+
 
 #appstore{
-background: url(../images/appstore-bg.png) no-repeat;
-background-position: center center;
+	background: url(../images/appstore-bg.png) no-repeat;
+	background-position: center center;
 
   -webkit-background-size:cover; 
     -moz-background-size:cover; 
     -o-background-size: cover; 
     background-size: cover; 
 
-height:601px;
+	height:601px;
 }
 
 #nextrappbutton{
-margin-top:200px;
-width:114px;
-height:114px;
-	background: url(../images/appstore-nextrbutton.png) no-repeat;
-
+	margin-top:200px;
+	width:114px;
+	height:114px;
+	background-image: url(../images/appstore-nextrbutton.png);
+	
+	background-position: bottom; 
+	text-indent: -9999px;
+	-webkit-transition: background-position 0.0s ease; 
+	  -moz-transition: background-position 0.0s ease; 
+	  -ms-transition: background-position 0.0s ease; 
+	  transition: background-position 0.0s ease; 
+  	border-radius: 0px !important;
+  	-webkit-border-radius: 0px !important;
+	
 	&:hover {
-		background: url(../images/appstore-nextrbutton-hover.png) no-repeat;
+		background-position: center; 
 	}
 	
 	&:active {
-		background: url(../images/appstore-nextrbutton-push.png) no-repeat;
+		background-position: top; 
 	}
 }
 
@@ -588,20 +745,19 @@ margin-top:25px;
 
 
 footer{
-background: url(../images/footer-bg.png) no-repeat;
-background-position: center center;
+	background: url(../images/footer-bg.png) no-repeat;
+	background-position: center center;
 
   -webkit-background-size:cover; 
     -moz-background-size:cover; 
     -o-background-size: cover; 
     background-size: cover; 
 
-height:376px;
+	height:376px;
 }
 
 #nextr-footer{
-margin-top:70px;
-margin-left:90px;
+	margin-top:70px;
 }
 
 .footer-header img {
@@ -614,32 +770,32 @@ margin-left:90px;
 }
 
 .footer-header h1 {
-margin-left:50px;
-color: white;
-font-size:30px;
-			font-family:"DINPro-Light";
+	margin-left:50px;
+	color: white;
+	font-size:30px;
+	font-family:"DINPro-Light";
 
 }
 
 #footer-feedback{
-color: white;
-font-size:18px;
-margin-bottom:30px;
-font-family:"DINPro-Light";
+	color: white;
+	font-size:18px;
+	margin-bottom:30px;
+	font-family:"DINPro-Light";
 }
 
 #footer-claimer{
-color:black;
-font-size:11px;
-line-height:14px;
-font-family:"DINPro-Regular";
+	color:black;
+	font-size:11px;
+	line-height:14px;
+	font-family:"DINPro-Regular";
 
 }
 
 #who{
-float:left;
-margin-top:70px;
-margin-left:0px;
+	float:left;
+	margin-top:70px;
+	margin-left:0px;
 
 	#mwermuth{
 		margin-top:20px;
@@ -656,17 +812,26 @@ margin-left:0px;
 	}
 	
 	#footer-facebook{
-	margin-top:20px;
-	width:40px;
-	height:40px;
-		background: url(../images/footer-facebook.png) no-repeat;
-
+		margin-top:20px;
+		width:40px;
+		height:40px;
+		background-image: url(../images/footer-facebook.png);
+	
+		background-position: bottom; 
+		text-indent: -9999px;
+		-webkit-transition: background-position 0.0s ease; 
+		  -moz-transition: background-position 0.0s ease; 
+		  -ms-transition: background-position 0.0s ease; 
+		  transition: background-position 0.0s ease; 
+	  	border-radius: 0px !important;
+	  	-webkit-border-radius: 0px !important;
+		
 		&:hover {
-			background: url(../images/footer-facebook-hover.png) no-repeat;
+			background-position: center; 
 		}
 	
 		&:active {
-			background: url(../images/footer-facebook-push.png) no-repeat;
+			background-position: top; 
 		}
 	}
 	
@@ -675,14 +840,23 @@ margin-left:0px;
 	margin-top:20px;
 	width:40px;
 	height:40px;
-		background: url(../images/footer-twitter.png) no-repeat;
-
+		background-image: url(../images/footer-twitter.png);
+	
+		background-position: bottom; 
+		text-indent: -9999px;
+		-webkit-transition: background-position 0.0s ease; 
+		  -moz-transition: background-position 0.0s ease; 
+		  -ms-transition: background-position 0.0s ease; 
+		  transition: background-position 0.0s ease; 
+	  	border-radius: 0px !important;
+	  	-webkit-border-radius: 0px !important;
+		
 		&:hover {
-			background: url(../images/footer-twitter-hover.png) no-repeat;
+			background-position: center; 
 		}
 	
 		&:active {
-			background: url(../images/footer-twitter-push.png) no-repeat;
+			background-position: top; 
 		}
 	}
 }

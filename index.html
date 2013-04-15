@@ -14,12 +14,13 @@
 		<link rel="stylesheet" href="css/master.css">
 	</head>
 	
-	<body class="responsive fixed-top-bar bg-down" data-spy="scroll" data-target="#nav-collapse">
+	<body class="responsive" data-spy="scroll" data-target="#nav-collapse">
+		<div id="video-content" class="video-down">
+		</div>
 		<div id="img-bg" class="bg-down"></div>
 		<div id="footer-pusher">
 			<div id="page-wrap">	
-				<div id="video-content" class="video-down">
-				</div>
+
 				<nav id="page-nav" class="top-bar">
 					
 					<div class="container">
@@ -96,12 +97,12 @@
 											</a>
 										</li>
 										<li>
-											<a href="http://www.facebook.com/nextr.info" target="_blank">
+											<a href="http://www.facebook.com/nextrinfo" target="_blank">
 												<div id="social-facebook"></div>
 											</a>
 										</li>
 										<li>
-											<a href="http://www.facebook.com/nextr.info" target="_blank">
+											<a href="http://www.twitter.com/nextrinfo" target="_blank">
 												<div id="social-twitter"></div>
 											</a>
 										</li>
@@ -119,55 +120,76 @@
 			<h1>So funktioniert nextr</h1>
 		</div>
 		
-		<div id="howitworks" class="show-on-desktop">
+		<div id="howitworks" class="show-on-desktop show-on-tablet">
 			<div class="container">
 
-				<div class="row">
-					<div class="span5 no-padding">
-						<div class="text-right" id="how-right">
-							<div id="haltestellen">
-								<h3>Haltestellen</h3>
-								Drück auf das Haltestellen
-								Symbol um die Abfahrtszeit
-								und Richtung der nächsten
-								Linie zu sehen
-							</div>
-							<div id="datepicker">
-								<h3>Datepicker</h3>
-								Die aktuelle Zeit lässt sich
-								überall durch den Datepicker
-								verstellen. Alle Abfahrtszeiten
-								beziehen sich auf die hier
-								eingestellte Zeit.
+				<div class="row center-row">
+					<div class="center-description">
+						<div class="span5 no-padding description-left">
+							<div class="text-right" id="how-right">
+								<div id="haltestellen">
+									<h3>Haltestellen</h3>
+									Drück auf das Haltestellen
+									Symbol um die Abfahrtszeit
+									und Richtung der nächsten
+									Linie zu sehen
+								</div>
+								<div id="datepicker">
+									<h3>Datepicker</h3>
+									Die aktuelle Zeit lässt sich
+									überall durch den Datepicker
+									verstellen. Alle Abfahrtszeiten
+									beziehen sich auf die hier
+									eingestellte Zeit.
+								</div>
 							</div>
 						</div>
-					</div>
 	
-					<div class="span6 no-padding" id="iphone-center">
-						<img src="images/howitworks-homeiphone.png" id="iphone"/>
-					</div>
+						<div class="span6 no-padding" id="iphone-center">
+							<div id="arrows">
+							</div>
+							<div id="app-screenshot">
+								<div class="hidden" id="one">
+									<img src="images/iphone-haltestelle.png" />
+								</div>
+								<div class="hidden" id="two">
+									<img src="images/iphone-datepicker.png" />
+								</div>
+								<div class="hidden" id="three">
+									<img src="images/iphone-suche.png" />
+								</div>
+								<div class="hidden" id="four">
+									<img src="images/iphone-bringmehome.png" />
+								</div>
+								<div class="hidden" id="five">
+									<img src="images/iphone-nextr.png" />
+								</div>
+							</div>
+							<!--<img src="images/iphone-container.png" id="iphone"/>-->
+						</div>
 								
-					<div class="span5 no-padding">
-						<div class="text-left" id="how-left">
-							<div id="suche">
-								<h3>Suche/Autosuggest</h3>
-								Such nach jeder beliebigen 
-								Haltestelle oder Verbindung 
-								innerhalb Deutschlands. Auto-
-								Suggest hilft dir bei der Eingabe.
-							</div>
-							<div id="bringmehome">
-								<h3>Bring me home</h3>
-								Drück den home button um
-								den schnellsten weg nach 
-								Hause angezeigt zu bekommen.
-							</div>
-							<div id="nextrbutton">
-								<h3>Der nextr Button</h3>
-								Drück den nextr button um 
-								deinen aktuellen Ort auf der 
-								Karte anzuzeigen und alle 
-								Haltestellen in nextr Nähe
+						<div class="span5 no-padding description-right">
+							<div class="text-left" id="how-left">
+								<div id="suche">
+									<h3>Suche/Autosuggest</h3>
+									Such nach jeder beliebigen 
+									Haltestelle oder Verbindung 
+									innerhalb Deutschlands. Auto-
+									Suggest hilft dir bei der Eingabe.
+								</div>
+								<div id="bringmehome">
+									<h3>Bring me home</h3>
+									Drück den home button um
+									den schnellsten weg nach 
+									Hause angezeigt zu bekommen.
+								</div>
+								<div id="nextrbutton">
+									<h3>Der nextr Button</h3>
+									Drück den nextr button um 
+									deinen aktuellen Ort auf der 
+									Karte anzuzeigen und alle 
+									Haltestellen in nextr Nähe
+								</div>
 							</div>
 						</div>
 					</div>
@@ -179,54 +201,55 @@
 				<div class="row">
 					<div class="span16">
 						<div id="home-close" class="heading">
-							<img src="images/howitworks-close.png" class="close-icon close-left"/>
 							<h1>Homescreen</h1>
-							<img src="images/howitworks-close.png" class="close-icon close-right"/>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div id="howitworks2" class="show-on-desktop">
+		<div id="howitworks2" class="show-on-desktop show-on-tablet">
 			<div class="container">
 
-				<div class="row">
-					<div class="span4 no-padding">
-						<div class="text-right" id="how-right2">
-							<div id="verbindungen">
-								<h3>Verbindungen</h3>
-								Alle möglichen Verbindungen
-								werden übersichtlich mit Fahr-
-								zeiten und Fußwegen angezeigt.
-							</div>
-							<div id="scroll">
-								<h3>Scroll-to-Refresh</h3>
-								Durch scrollen nach oben
-								 oder unten werden frühere
-								 oder spätere Verbindungen
-								 nachgeladen
+				<div class="row center-row">
+					<div class="center-description">
+					
+						<div class="span4 no-padding description-left2">
+							<div class="text-right" id="how-right2">
+								<div id="verbindungen">
+									<h3>Verbindungen</h3>
+									Alle möglichen Verbindungen
+									werden übersichtlich mit Fahr-
+									zeiten und Fußwegen angezeigt.
+								</div>
+								<div id="scroll">
+									<h3>Scroll-to-Refresh</h3>
+									Durch scrollen nach oben
+									 oder unten werden frühere
+									 oder spätere Verbindungen
+									 nachgeladen
+								</div>
 							</div>
 						</div>
-					</div>
 	
-					<div class="span6 no-padding" id="iphone-center2">
-						<img src="images/howitworks2-coniphone.png" id="iphone2"/>
-					</div>
+						<div class="span6 no-padding" id="iphone-center2">
+							<img src="images/howitworks2-coniphone.png" id="iphone2"/>
+						</div>
 								
-					<div class="span4 no-padding">
-						<div class="text-left" id="how-left2">
-							<div id="detail">
-								<h3>Detailansicht</h3>
-								Die Detailsansicht der Route
-								mit allen Zwischenhalten
-								lässt sich einfach ausklappen.
-							</div>
-							<div id="close">
-								<h3>Schließen</h3>
-								Der schließen Button bringt
-								dich jederzeit zurück zum 
-								Homescreen.
+						<div class="span4 no-padding description-right2">
+							<div class="text-left" id="how-left2">
+								<div id="detail">
+									<h3>Detailansicht</h3>
+									Die Detailsansicht der Route
+									mit allen Zwischenhalten
+									lässt sich einfach ausklappen.
+								</div>
+								<div id="close">
+									<h3>Schließen</h3>
+									Der schließen Button bringt
+									dich jederzeit zurück zum 
+									Homescreen.
+								</div>
 							</div>
 						</div>
 					</div>
@@ -241,16 +264,14 @@
 				<div class="row">
 					<div class="span16">
 						<div id="verbindungen-close" class="heading">
-							<img src="images/howitworks-close.png" class="close-icon close-left"/>
 							<h1>Verbindungssuche</h1>
-							<img src="images/howitworks-close.png" class="close-icon close-right"/>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div id="howitworksmobile" class="show-on-mobile-tablet">
+		<div id="howitworksmobile" class="show-on-mobile">
 			<div class="container">
 				<div class="row">
 						<img src="images/howitworks-iphone-mobile.png" id="mobile-iphone">
@@ -319,7 +340,7 @@
 			</div>
 			</div>
 		</div>
-		<div id="howitworks2-mobile" class="show-on-mobile-tablet">
+		<div id="howitworks2-mobile" class="show-on-mobile">
 			<div class="container">
 				<div class="row">
 						<img src="images/howitworks2-iphone-mobile.png" id="mobile-iphone">
@@ -368,12 +389,67 @@
 			<div class="container">
 				<div class="row"  id="stations">
 					<div class="span16">
-						<ul>
-								<li><img src="images/bus.png" class="vicon"/></li>
-								<li><img src="images/sbahn.png" class="vicon"/></li>
-								<li><img src="images/ubahn.png" class="vicon"/></li>
-								<li><img src="images/zug.png" class="vicon"/></li>
-								<li><img src="images/sonstige.png" class="vicon"/></li>
+						<ul class="show-on-tablet-desktop">
+								<li id="bus">
+									<div class="hovercenter">
+										<img src="images/bus-hover.png" class="hover"/>
+										<img src="images/bus.png" class="vicon"/>
+									</div>
+								</li>
+								<li id="sbahn">
+									<div class="hovercenter">
+										<img src="images/sbahn-hover.png" class="hover"/>
+										<img src="images/sbahn.png" class="vicon"/>
+									</div>
+								</li>
+								<li id="ubahn">
+									<div class="hovercenter">
+										<img src="images/ubahn-hover.png" class="hover"/>
+										<img src="images/ubahn.png" class="vicon"/>
+									</div>
+								</li>
+								<li id="zug">
+									<div class="hovercenter">
+										<img src="images/zug-hover.png" class="hover"/>
+										<img src="images/zug.png" class="vicon"/>
+									</div>
+								</li>
+								<li id="sonstige">
+									<div class="hovercenter">
+										<img src="images/sonstige-hover.png" class="hover"/>
+										<img src="images/sonstige.png" class="vicon"/>
+									</div>
+								</li>
+
+						</ul>
+						
+						<ul class="show-on-mobile">
+								<li id="bus">
+									<div class="hovercenter">
+										<img src="images/bus.png" class="vicon"/>
+									</div>
+								</li>
+								<li id="sbahn">
+									<div class="hovercenter">
+										<img src="images/sbahn.png" class="vicon"/>
+									</div>
+								</li>
+								<li id="ubahn">
+									<div class="hovercenter">
+										<img src="images/ubahn.png" class="vicon"/>
+									</div>
+								</li>
+								<li id="zug">
+									<div class="hovercenter">
+										<img src="images/zug.png" class="vicon"/>
+									</div>
+								</li>
+								<li id="sonstige">
+									<div class="hovercenter">
+										<img src="images/sonstige.png" class="vicon"/>
+									</div>
+								</li>
+
 						</ul>
 					</div>	
 			</div>
@@ -437,8 +513,15 @@
 							<img src="images/footer-oberhaeuser.png" id="ober"/>
 							<img src="images/footer-mwermuth.png" id="mwermuth"/>
 							<ul>
-								<li><div id="footer-facebook"></div></li>
-								<li><div id="footer-twitter"></div></li>
+								<li>
+									<div id="footer-facebook">
+									</div>
+								</li>
+								<li>
+									<div id="footer-twitter">
+									
+									</div>
+								</li>
 							</ul>
 							
 						</div>
@@ -453,12 +536,7 @@
     	<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script src="js/jQueryRotate.2.2.js"></script>
     	<script src="js/bootstrap.min.js"></script>
-		<script src="js/custom.js"></script>
-		<script>
-			$(document).ready(function(){
-				$('#close2').trigger('click');
-				
-			});
-		</script>    	
+		<script src="js/custom-ck.js"></script>
+   	
 	</body>
 </html>

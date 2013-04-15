@@ -161,7 +161,7 @@ img.native-width {
     display: none !important;
   }
 }
-@media screen and (max-width: 1340px) {
+@media screen and (max-width: 1000px) {
   .show-on-mobile-tablet {
     display: inherit !important;
   }
@@ -170,7 +170,7 @@ img.native-width {
     display: none !important;
   }
 }
-@media screen and (min-width: 759px) and (max-width: 1340px) {
+@media screen and (min-width: 759px) and (max-width: 1000px) {
   .show-on-tablet {
     display: inherit !important;
   }
@@ -188,7 +188,7 @@ img.native-width {
     display: none !important;
   }
 }
-@media screen and (min-width: 1341px) {
+@media screen and (min-width: 1001px) {
   .show-on-desktop {
     display: inherit !important;
   }
@@ -573,7 +573,7 @@ img.native-width {
   position: relative;
 }
 
-@media screen and (max-width: 1340px) {
+@media screen and (max-width: 1000px) {
   .max-50 {
     max-width: 50%;
   }
@@ -623,7 +623,7 @@ img {
   width: auto;
   max-width: 1340px;
 }
-@media screen and (min-width: 759px) and (max-width: 1340px) {
+@media screen and (min-width: 759px) and (max-width: 1000px) {
   .responsive .container {
     margin: 0;
     padding: 0 0px;
@@ -957,7 +957,7 @@ textarea {
   color: #999999;
   text-decoration: underline;
 }
-@media screen and (min-width: 1341px) {
+@media screen and (min-width: 1001px) {
   .field-group .fields {
     position: relative;
   }
@@ -2227,7 +2227,7 @@ header {
 }
 
 #page-header {
-  margin-top: 35px;
+  margin-top: 31px;
 }
 
 #img-bg {
@@ -2338,13 +2338,21 @@ header {
   float: left;
   text-align: center;
   margin-right: 20px;
-  background: url(../images/video-play.png) no-repeat;
+  background-image: url(../images/video-play.png);
+  background-position: bottom;
+  text-indent: -9999px;
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -ms-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
 }
 #video-play:hover {
-  background: url(../images/video-play-hover.png) no-repeat;
+  background-position: center;
 }
 #video-play:active {
-  background: url(../images/video-play-push.png) no-repeat;
+  background-position: top;
 }
 
 .hero {
@@ -2367,7 +2375,7 @@ p#subhero {
   width: 620px;
   height: 728px;
   background: url(../images/hand-header.png) no-repeat bottom;
-  max-width: 480px;
+  max-width: 560px;
   min-width: 350px;
   background-size: 100%;
 }
@@ -2413,37 +2421,61 @@ p#subhero {
 #social-download {
   width: 260px;
   height: 54px;
-  background: url(../images/social-download.png) no-repeat;
+  background-image: url(../images/social-download.png);
+  background-position: bottom;
+  text-indent: -9999px;
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -ms-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
 }
 #social-download:hover {
-  background: url(../images/social-download-hover.png) no-repeat;
+  background-position: center;
 }
 #social-download:active {
-  background: url(../images/social-download-push.png) no-repeat;
+  background-position: top;
 }
 
 #social-facebook {
   width: 53px;
   height: 54px;
-  background: url(../images/social-facebook.png) no-repeat;
+  background-image: url(../images/social-facebook.png);
+  background-position: bottom;
+  text-indent: -9999px;
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -ms-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
 }
 #social-facebook:hover {
-  background: url(../images/social-facebook-hover.png) no-repeat;
+  background-position: center;
 }
 #social-facebook:active {
-  background: url(../images/social-facebook-push.png) no-repeat;
+  background-position: top;
 }
 
 #social-twitter {
   width: 53px;
   height: 54px;
-  background: url(../images/social-twitter.png) no-repeat;
+  background-image: url(../images/social-twitter.png);
+  background-position: bottom;
+  text-indent: -9999px;
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -ms-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
 }
 #social-twitter:hover {
-  background: url(../images/social-twitter-hover.png) no-repeat;
+  background-position: center;
 }
 #social-twitter:active {
-  background: url(../images/social-twitter-push.png) no-repeat;
+  background-position: top;
 }
 
 .mb0 {
@@ -2470,6 +2502,80 @@ p#subhero {
   padding: 0 0 !important;
 }
 
+.description-left {
+  width: 200px;
+}
+
+.description-right {
+  width: 200px;
+  float: left !important;
+}
+
+.description-left2 {
+  width: 160px;
+}
+
+.description-right2 {
+  width: 160px;
+  float: left !important;
+}
+
+.center-description {
+  display: inline-block;
+}
+
+.center-row {
+  text-align: center;
+  width: 100%;
+}
+
+#iphone-center {
+  margin-top: 60px;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-image: url("../images/iphone-container.png");
+  display: block;
+  width: 312px;
+  height: 668px;
+}
+
+.hidden {
+  display: none;
+}
+
+#arrows {
+  background-image: url("../images/arrows.png");
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 469px;
+  height: 473px;
+  margin-left: -80px;
+  margin-top: 90px;
+  z-index: 0;
+}
+
+#app-screenshot {
+  display: block;
+  width: 268px;
+  height: 480px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 94px;
+  left: 24px;
+}
+
+.screenhot-show {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  z-index: 6;
+  opacity: 1;
+  width: 268px;
+  height: 20px;
+}
+
 #iphone {
   position: absolute;
   margin: 0px auto;
@@ -2481,20 +2587,21 @@ p#subhero {
 }
 
 #how-right {
-  margin-top: 80%;
-  width: 50%;
-  max-width: 230px;
+  margin-top: 300px;
+  width: 200px;
   float: right;
 }
 
 #how-left {
   margin-top: 120px;
-  width: 220px;
+  width: 200px;
   float: left;
 }
 
 #haltestellen {
   font-family: "DINPro-Regular";
+  cursor: hand;
+  cursor: pointer;
   color: #a3a3a3;
 }
 #haltestellen > h3 {
@@ -2504,6 +2611,8 @@ p#subhero {
 #datepicker {
   margin-top: 130px;
   margin-right: 20px;
+  cursor: hand;
+  cursor: pointer;
   font-family: "DINPro-Regular";
   color: #a3a3a3;
 }
@@ -2512,7 +2621,9 @@ p#subhero {
 }
 
 #suche {
-  margin-left: 20px;
+  margin-left: -20px;
+  cursor: hand;
+  cursor: pointer;
   font-family: "DINPro-Regular";
   color: #a3a3a3;
 }
@@ -2522,7 +2633,9 @@ p#subhero {
 
 #bringmehome {
   margin-top: 130px;
-  margin-left: 38px;
+  margin-left: 10px;
+  cursor: hand;
+  cursor: pointer;
   font-family: "DINPro-Regular";
   color: #a3a3a3;
 }
@@ -2532,7 +2645,9 @@ p#subhero {
 
 #nextrbutton {
   margin-top: 60px;
-  margin-left: 40px;
+  margin-left: 10px;
+  cursor: hand;
+  cursor: pointer;
   font-family: "DINPro-Regular";
   color: #a3a3a3;
 }
@@ -2584,26 +2699,37 @@ p#subhero {
   margin: 0px auto;
   margin-top: 50px;
   display: block;
-  max-width: 675px;
-  max-height: 668px;
+  max-width: 645px;
+  max-height: 638px;
   z-index: 1;
+}
+#howitworks2 #iphone-center2 {
+  width: 645px;
+  height: 638px;
+  display: block;
+}
+
+#iphone-over {
+  width: 645px;
+  height: 638px;
 }
 
 #how-right2 {
-  margin-top: 290px;
-  width: 240px;
+  margin-top: 260px;
+  width: 160px;
   float: right;
 }
 
 #how-left2 {
-  margin-top: 330px;
-  margin-left: 30px;
-  width: 200px;
+  margin-top: 310px;
+  width: 160px;
   float: left;
 }
 
 #verbindungen {
   font-family: "DINPro-Regular";
+  cursor: hand;
+  cursor: pointer;
   color: #a3a3a3;
 }
 #verbindungen > h3 {
@@ -2611,8 +2737,10 @@ p#subhero {
 }
 
 #scroll {
-  margin-top: 140px;
+  margin-top: 120px;
   margin-right: 20px;
+  cursor: hand;
+  cursor: pointer;
   font-family: "DINPro-Regular";
   color: #a3a3a3;
 }
@@ -2622,14 +2750,18 @@ p#subhero {
 
 #detail {
   font-family: "DINPro-Regular";
+  cursor: hand;
+  cursor: pointer;
   color: #a3a3a3;
+  margin-left: 10px;
 }
 #detail > h3 {
   font-family: "DINPro-Regular";
 }
 
 #close {
-  margin-top: 120px;
+  margin-top: 70px;
+  margin-left: 10px;
   font-family: "DINPro-Regular";
   color: #a3a3a3;
 }
@@ -2702,7 +2834,7 @@ p#subhero {
 #stations ul {
   margin-left: 0px;
   zoom: 1;
-  margin-left: 25%;
+  margin-left: 15%;
   margin-right: auto;
 }
 #stations ul > li {
@@ -2722,11 +2854,22 @@ p#subhero {
   list-style-type: none;
 }
 #stations ul > li {
-  margin-right: 120px;
+  display: inline;
+  margin-right: 10px;
   margin-top: 10px;
 }
-#stations ul > li #hover {
+#stations ul > li.hover {
   display: none;
+  width: 100px;
+}
+
+.hovercenter img {
+  display: inline;
+}
+
+.hover {
+  width: 110px;
+  visibility: hidden;
 }
 
 #appstore {
@@ -2743,13 +2886,21 @@ p#subhero {
   margin-top: 200px;
   width: 114px;
   height: 114px;
-  background: url(../images/appstore-nextrbutton.png) no-repeat;
+  background-image: url(../images/appstore-nextrbutton.png);
+  background-position: bottom;
+  text-indent: -9999px;
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -ms-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
 }
 #nextrappbutton:hover {
-  background: url(../images/appstore-nextrbutton-hover.png) no-repeat;
+  background-position: center;
 }
 #nextrappbutton:active {
-  background: url(../images/appstore-nextrbutton-push.png) no-repeat;
+  background-position: top;
 }
 
 #appstore-text {
@@ -2778,7 +2929,6 @@ footer {
 
 #nextr-footer {
   margin-top: 70px;
-  margin-left: 90px;
 }
 
 .footer-header img {
@@ -2846,25 +2996,41 @@ footer {
   margin-top: 20px;
   width: 40px;
   height: 40px;
-  background: url(../images/footer-facebook.png) no-repeat;
+  background-image: url(../images/footer-facebook.png);
+  background-position: bottom;
+  text-indent: -9999px;
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -ms-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
 }
 #who #footer-facebook:hover {
-  background: url(../images/footer-facebook-hover.png) no-repeat;
+  background-position: center;
 }
 #who #footer-facebook:active {
-  background: url(../images/footer-facebook-push.png) no-repeat;
+  background-position: top;
 }
 #who #footer-twitter {
   margin-top: 20px;
   width: 40px;
   height: 40px;
-  background: url(../images/footer-twitter.png) no-repeat;
+  background-image: url(../images/footer-twitter.png);
+  background-position: bottom;
+  text-indent: -9999px;
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -ms-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
 }
 #who #footer-twitter:hover {
-  background: url(../images/footer-twitter-hover.png) no-repeat;
+  background-position: center;
 }
 #who #footer-twitter:active {
-  background: url(../images/footer-twitter-push.png) no-repeat;
+  background-position: top;
 }
 
 #mobile-iphone {
@@ -2894,102 +3060,155 @@ footer {
   background-color: #f4f4f4;
 }
 
-@media screen and (min-width: 759px) and (max-width: 1340px) {
+@media screen and (min-width: 759px) and (max-width: 1000px) {
   .top-bar .top-bar-links > li > a {
     width: 60px;
     padding: 29px 0px;
   }
 
   #hand {
-    margin-left: -15%;
+    width: 620px;
+    height: 728px;
+    background: url(../images/hand-header.png) no-repeat bottom;
+    max-width: 470px;
+    min-width: 350px;
+    background-size: 100%;
+    margin-left: -150px;
   }
 
   #social-links {
+    margin-left: -20px;
+  }
+
+  .description-left {
+    width: 160px;
+  }
+
+  .description-right {
+    width: 140px;
+  }
+
+  .description-left2 {
+    width: 130px;
+  }
+
+  .description-right2 {
+    width: 130px;
+  }
+
+  #iphone-center {
     margin-left: 70px;
+    margin-right: 70px;
   }
 
-  #social-download {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 180px;
-    min-width: 180px;
-    background-size: 100%;
-    margin-top: 10px;
+  #datepicker {
+    margin-top: 80px;
   }
-  #social-download:hover {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 180px;
-    min-width: 180px;
-    background-size: 100%;
-    margin-top: 10px;
+
+  #suche {
+    margin-left: -15px;
   }
-  #social-download:active {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 180px;
-    min-width: 180px;
-    background-size: 100%;
+
+  #bringmehome {
+    margin-top: 90px;
+    margin-left: 15px;
+  }
+
+  #nextrbutton {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  #how-left {
+    width: 140px;
+  }
+
+  #how-right {
+    width: 160px;
+  }
+
+  #howitworks2 {
+    height: 670px;
+  }
+
+  #howitworks2 #iphone-center2 {
+    width: 495px;
+    height: 488px;
+    margin-top: 30px;
+  }
+
+  #howitworks2 #iphone2 {
+    max-width: 495px;
+    max-height: 488px;
+  }
+
+  #iphone-over {
+    width: 495px;
+    height: 488px;
+  }
+
+  #verbindungen {
+    margin-top: -50px;
+  }
+
+  #scroll {
+    margin-top: 90px;
+  }
+
+  #close {
+    margin-top: 50px;
+  }
+
+  #how-left2 {
+    width: 130px;
+    margin-top: 260px;
+  }
+
+  #how-right2 {
+    width: 130px;
+    margin-top: 200px;
+  }
+
+  #stations ul {
+    margin-left: 0px;
+    zoom: 1;
+    margin-left: 10%;
+    margin-right: auto;
+  }
+  #stations ul > li {
+    display: block;
+    list-style-type: none;
+  }
+  #stations ul:before, #stations ul:after {
+    content: "";
+    display: table;
+  }
+  #stations ul:after {
+    clear: both;
+  }
+  #stations ul > li {
+    display: block;
+    float: left;
+    list-style-type: none;
+  }
+  #stations ul > li {
+    display: inline;
+    margin-right: 10px;
     margin-top: 10px;
   }
 
-  #social-facebook {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 35px;
-    min-width: 35px;
-    background-size: 100%;
-    margin-top: 10px;
-  }
-  #social-facebook:hover {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 35px;
-    min-width: 35px;
-    background-size: 100%;
-    margin-top: 10px;
-  }
-  #social-facebook:active {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 35px;
-    min-width: 35px;
-    background-size: 100%;
-    margin-top: 10px;
+  .hovercenter img {
+    display: inline;
   }
 
-  #social-twitter {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 35px;
-    min-width: 35px;
-    background-size: 100%;
-    margin-top: 10px;
+  .vicon {
+    width: 40px;
+    height: 40px;
   }
-  #social-twitter:hover {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 35px;
-    min-width: 35px;
-    background-size: 100%;
-    margin-top: 10px;
-  }
-  #social-twitter:active {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 35px;
-    min-width: 35px;
-    background-size: 100%;
-    margin-top: 10px;
+
+  .hover {
+    width: 70px;
+    visibility: hidden;
   }
 
   #appstore-text > h1 {
@@ -3003,7 +3222,6 @@ footer {
 
   #nextr-footer {
     margin-top: 40px;
-    margin-left: -40px;
   }
 }
 @media screen and (max-width: 758px) {
@@ -3031,9 +3249,9 @@ footer {
     height: 528px;
     float: none;
     margin: 0 auto;
-    margin-top: -95px;
+    margin-top: -91px;
     margin-left: -10%;
-    max-width: 450px;
+    max-width: 390px;
     min-width: 350px;
     background-size: 95%;
   }
@@ -3047,88 +3265,86 @@ footer {
     margin-left: 40px;
   }
 
+  #social-links {
+    margin-left: 5%;
+  }
+
   #social-download {
     width: 100%;
+    height: 37px;
     margin: 0 auto;
     float: none;
     max-width: 180px;
     min-width: 180px;
     background-size: 100%;
     margin-top: 10px;
+    background-image: url(../images/social-download-mobil.png);
+    background-position: bottom;
+    text-indent: -9999px;
+    -webkit-transition: background-position 0s ease;
+    -moz-transition: background-position 0s ease;
+    -ms-transition: background-position 0s ease;
+    transition: background-position 0s ease;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
   }
   #social-download:hover {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 180px;
-    min-width: 180px;
-    background-size: 100%;
-    margin-top: 10px;
+    background-position: center;
   }
   #social-download:active {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 180px;
-    min-width: 180px;
-    background-size: 100%;
-    margin-top: 10px;
+    background-position: top;
   }
 
   #social-facebook {
     width: 100%;
+    height: 35px;
     margin: 0 auto;
     float: none;
     max-width: 35px;
     min-width: 35px;
     background-size: 100%;
     margin-top: 10px;
+    background-image: url(../images/social-facebook-mobil.png);
+    background-position: bottom;
+    text-indent: -9999px;
+    -webkit-transition: background-position 0s ease;
+    -moz-transition: background-position 0s ease;
+    -ms-transition: background-position 0s ease;
+    transition: background-position 0s ease;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
   }
   #social-facebook:hover {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 35px;
-    min-width: 35px;
-    background-size: 100%;
-    margin-top: 10px;
+    background-position: center;
   }
   #social-facebook:active {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 35px;
-    min-width: 35px;
-    background-size: 100%;
-    margin-top: 10px;
+    background-position: top;
   }
 
   #social-twitter {
     width: 100%;
+    height: 35px;
     margin: 0 auto;
     float: none;
     max-width: 35px;
     min-width: 35px;
     background-size: 100%;
     margin-top: 10px;
+    background-image: url(../images/social-twitter-mobil.png);
+    background-position: bottom;
+    text-indent: -9999px;
+    -webkit-transition: background-position 0s ease;
+    -moz-transition: background-position 0s ease;
+    -ms-transition: background-position 0s ease;
+    transition: background-position 0s ease;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
   }
   #social-twitter:hover {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 35px;
-    min-width: 35px;
-    background-size: 100%;
-    margin-top: 10px;
+    background-position: center;
   }
   #social-twitter:active {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    max-width: 35px;
-    min-width: 35px;
-    background-size: 100%;
-    margin-top: 10px;
+    background-position: top;
   }
 
   #map {
@@ -3146,14 +3362,14 @@ footer {
   }
 
   .vicon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 
   #stations ul {
     margin-left: 0px;
     zoom: 1;
-    margin-left: 10%;
+    margin-left: 7%;
     margin-right: auto;
   }
   #stations ul > li {

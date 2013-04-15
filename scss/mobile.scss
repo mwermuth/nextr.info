@@ -41,107 +41,138 @@ margin-right:auto;
 }
 
 #hand{
-margin-left:-15%;
+width:620px;
+height:728px;
+background:url(../images/hand-header.png) no-repeat bottom;
+max-width: 470px;
+min-width: 350px;
+background-size: 100%;
+margin-left:-150px;
 }
+
 
 #social-links{
 
+	margin-left:-20px;
+}
+
+
+.description-left{
+	width:160px;
+}
+
+.description-right{
+	width:140px;
+}
+
+.description-left2{
+	width:130px;
+}
+
+.description-right2{
+	width:130px;
+}
+
+#iphone-center{
 	margin-left:70px;
+	margin-right:70px;
 }
 
-#social-download{
-width: 100%;
-margin: 0 auto;
-float: none;
-max-width: 180px;
-min-width: 180px;
-background-size: 100%;
-margin-top: 10px;
-
-	&:hover {
-		width: 100%;
-		margin: 0 auto;
-		float: none;
-		max-width: 180px;
-		min-width: 180px;
-		background-size: 100%;
-		margin-top: 10px;
-	}
-	
-	&:active {
-	
-	width: 100%;
-	margin: 0 auto;
-	float: none;
-	max-width: 180px;
-	min-width: 180px;
-	background-size: 100%;
-	margin-top: 10px;
-	}
-
+#datepicker{
+	margin-top:80px;
 }
 
-#social-facebook{
-width: 100%;
-margin: 0 auto;
-float: none;
-max-width: 35px;
-min-width: 35px;
-background-size: 100%;
-margin-top: 10px;
-
-	&:hover {
-	
-	width: 100%;
-	margin: 0 auto;
-	float: none;
-	max-width: 35px;
-	min-width: 35px;
-	background-size: 100%;
-	margin-top: 10px;
-	}
-	
-	&:active {
-	
-	width: 100%;
-	margin: 0 auto;
-	float: none;
-	max-width: 35px;
-	min-width: 35px;
-	background-size: 100%;
-	margin-top: 10px;
-	}
+#suche{
+	margin-left:-15px;
 }
 
-#social-twitter{
-width: 100%;
-margin: 0 auto;
-float: none;
-max-width: 35px;
-min-width: 35px;
-background-size: 100%;
-margin-top: 10px;
-
-	&:hover {
-		width: 100%;
-		margin: 0 auto;
-		float: none;
-		max-width: 35px;
-		min-width: 35px;
-		background-size: 100%;
-		margin-top: 10px;
-	}
-	
-	&:active {
-		width: 100%;
-		margin: 0 auto;
-		float: none;
-		max-width: 35px;
-		min-width: 35px;
-		background-size: 100%;
-		margin-top: 10px;
-	}
+#bringmehome{
+	margin-top:90px;
+	margin-left:15px;
 }
+
+#nextrbutton{
+	margin-top:30px;
+	margin-left:20px;
+}
+
+#how-left{
+	width:140px;
+}
+
+#how-right{
+	width:160px;
+}
+
+#howitworks2{
+	height:670px;
+}
+
+#howitworks2 #iphone-center2{
+	width:495px;
+	height:488px;
+	margin-top:30px;
+}
+
+#howitworks2 #iphone2 {
+	max-width:495px;
+	max-height:488px;
+}
+
+#iphone-over{
+	width:495px;
+	height:488px;
+}
+
+#verbindungen{
+	margin-top:-50px;
+}
+
+#scroll{
+	margin-top:90px;
+}
+
+#close{
+	margin-top:50px;
+}
+
+#how-left2{
+	width:130px;
+	margin-top:260px;
+}
+
+#how-right2{
+	width:130px;
+	margin-top:200px;
+}
+
+#stations ul{
+		@include list-reset();
+		@include list-horizontal();
+		margin-left: 10%;
+		margin-right: auto;
+		> li{
+				//margin-left:120px;
+			    display: inline;
+				margin-right:10px;
+				margin-top:10px;
+		}
+}
+
+.hovercenter img{
+	display:inline;	
+}
+
+.vicon{
+	width:40px;
+	height:40px;
+}
+
+.hover{
+	width:70px;
+	visibility:hidden;
+}
+
 
 
 #appstore-text{
@@ -159,7 +190,6 @@ margin-top: 10px;
 
 #nextr-footer {
 margin-top: 40px;
-margin-left: -40px;
 }
 
 }
@@ -196,9 +226,9 @@ width:100%;
 height:528px;
 float: none;
 margin: 0 auto;
-margin-top:-95px;
+margin-top:-91px;
 margin-left:-10%;
-max-width:450px;
+max-width:390px;
 min-width:350px;
 background-size:95%;
 
@@ -218,10 +248,12 @@ margin-left:40px;
 }
 
 #social-links{
+margin-left:5%;
 }
 
 #social-download{
 width: 100%;
+height:37px;
 margin: 0 auto;
 float: none;
 max-width: 180px;
@@ -229,31 +261,30 @@ min-width: 180px;
 background-size: 100%;
 margin-top: 10px;
 
-	&:hover {
-		width: 100%;
-		margin: 0 auto;
-		float: none;
-		max-width: 180px;
-		min-width: 180px;
-		background-size: 100%;
-		margin-top: 10px;
-	}
-	
-	&:active {
-	
-	width: 100%;
-	margin: 0 auto;
-	float: none;
-	max-width: 180px;
-	min-width: 180px;
-	background-size: 100%;
-	margin-top: 10px;
-	}
+background-image: url(../images/social-download-mobil.png);
+
+background-position: bottom; 
+text-indent: -9999px;
+-webkit-transition: background-position 0.0s ease; 
+  -moz-transition: background-position 0.0s ease; 
+  -ms-transition: background-position 0.0s ease; 
+  transition: background-position 0.0s ease; 
+border-radius: 0px !important;
+-webkit-border-radius: 0px !important;
+
+&:hover {
+	background-position: center; 
+}
+
+&:active {
+	background-position: top; 
+}
 
 }
 
 #social-facebook{
 width: 100%;
+height:35px;
 margin: 0 auto;
 float: none;
 max-width: 35px;
@@ -261,31 +292,30 @@ min-width: 35px;
 background-size: 100%;
 margin-top: 10px;
 
-	&:hover {
-	
-	width: 100%;
-	margin: 0 auto;
-	float: none;
-	max-width: 35px;
-	min-width: 35px;
-	background-size: 100%;
-	margin-top: 10px;
-	}
-	
-	&:active {
-	
-	width: 100%;
-	margin: 0 auto;
-	float: none;
-	max-width: 35px;
-	min-width: 35px;
-	background-size: 100%;
-	margin-top: 10px;
-	}
+background-image: url(../images/social-facebook-mobil.png);
+
+background-position: bottom; 
+text-indent: -9999px;
+-webkit-transition: background-position 0.0s ease; 
+  -moz-transition: background-position 0.0s ease; 
+  -ms-transition: background-position 0.0s ease; 
+  transition: background-position 0.0s ease; 
+border-radius: 0px !important;
+-webkit-border-radius: 0px !important;
+
+&:hover {
+	background-position: center; 
+}
+
+&:active {
+	background-position: top; 
+}
+
 }
 
 #social-twitter{
 width: 100%;
+height:35px;
 margin: 0 auto;
 float: none;
 max-width: 35px;
@@ -293,25 +323,26 @@ min-width: 35px;
 background-size: 100%;
 margin-top: 10px;
 
-	&:hover {
-		width: 100%;
-		margin: 0 auto;
-		float: none;
-		max-width: 35px;
-		min-width: 35px;
-		background-size: 100%;
-		margin-top: 10px;
-	}
-	
-	&:active {
-		width: 100%;
-		margin: 0 auto;
-		float: none;
-		max-width: 35px;
-		min-width: 35px;
-		background-size: 100%;
-		margin-top: 10px;
-	}
+
+background-image: url(../images/social-twitter-mobil.png);
+
+background-position: bottom; 
+text-indent: -9999px;
+-webkit-transition: background-position 0.0s ease; 
+  -moz-transition: background-position 0.0s ease; 
+  -ms-transition: background-position 0.0s ease; 
+  transition: background-position 0.0s ease; 
+border-radius: 0px !important;
+-webkit-border-radius: 0px !important;
+
+&:hover {
+	background-position: center; 
+}
+
+&:active {
+	background-position: top; 
+}
+
 }
 
 
@@ -333,14 +364,14 @@ float:none;
 
 .vicon{
 
-		width: 60px;
-		height: 60px;
+		width: 50px;
+		height: 50px;
 }
 
 #stations ul{
 		@include list-reset();
 		@include list-horizontal();
-		margin-left: 10%;
+		margin-left: 7%;
 		margin-right: auto;
 		> li{
 			margin-right:5px;

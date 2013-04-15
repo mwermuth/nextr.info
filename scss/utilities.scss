@@ -170,7 +170,7 @@ img {
 $devices: mobile, mobile-tablet, tablet, tablet-desktop, desktop;
 $mobile-end: $responsive-breakpoint;
 $tablet-start: $mobile-end + 1;
-$tablet-end: $page-width + ($column-gutter * 2);
+$tablet-end: $page-width - 200;
 $desktop-start: $tablet-end + 1;
 
 // ! Respond to device mixins
