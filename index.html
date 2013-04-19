@@ -7,11 +7,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-		<meta name="keywords" content="">
-		<meta name="description" content="">
-		<meta name="author" content="">	
+		<meta name="keywords" content="nextr,Fahrplan,Bahn,U-bahn,Ubahn,Sbahn,S-Bahn,Bus,Zug,Tram,Straßenbahn,DB,Haltestelle,ÖPNV,Bahnhof">
+		<meta name="description" content="nextr ist die einfachste und eleganteste Art Deutschlands öffentliche Verkehrsmittel zu überblicken. Egal ob S-Bahn, U-Bahn, Bus oder Fähre, nextr kennt alle Haltestellen und Abfahrtszeiten in deiner direkten Umgebung und in ganz Deutschland. 
+
+Haltestellen und Verbindungen werden übersichtlich direkt auf der Karte visualisiert und gewährleisten so stets den optimalen Überblick. Zudem wird die Suche nach Haltestellen und Adressen durch Autosuggest enorm vereinfacht.">
+		<meta name="author" content="nextr">	
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 		<title>nextr.info</title>
 		<link rel="stylesheet" href="css/master.css">
+		<script type="text/javascript" src="//use.typekit.net/peo5sgi.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 	
 	<body class="responsive" data-spy="scroll" data-target="#nav-collapse">
@@ -30,12 +35,12 @@
 									<a href="http://www.nextr.info"><img src="images/nav-logo.png" id="nav-logo"/></a>
 								</div>
 							</div>
-							<div class="span14">
-								<button data-toggle="dropdown" class="show-on-mobile button float-right" id="nav-toggle">Menu</button>						
+							<div class="span14 dropdown">
+								<a data-toggle="dropdown" class="show-on-mobile button float-right dropdown-toggle" id="nav-toggle">Menu</a>						
 						
 								<div id="nav-collapse">
 						
-									<ul id="nav-site" class="top-bar-links nav-section float-left nav">
+									<ul id="nav-site" class="top-bar-links nav-section float-left nav dropdown-menu">
 										<li class="active"><a href="#nextr-content">Home</a></li>
 										<li><a href="#" id="video">Video</a></li>
 										<li><a href="#features">Features</a></li>
@@ -150,19 +155,19 @@
 							</div>
 							<div id="app-screenshot">
 								<div class="hidden" id="one">
-									<img src="images/iphone-haltestelle.png" />
+									<img src="images/iphone-haltestelle.jpg" />
 								</div>
 								<div class="hidden" id="two">
-									<img src="images/iphone-datepicker.png" />
+									<img src="images/iphone-datepicker.jpg" />
 								</div>
 								<div class="hidden" id="three">
-									<img src="images/iphone-suche.png" />
+									<img src="images/iphone-suche.jpg" />
 								</div>
 								<div class="hidden" id="four">
-									<img src="images/iphone-bringmehome.png" />
+									<img src="images/iphone-bringmehome.jpg" />
 								</div>
 								<div class="hidden" id="five">
-									<img src="images/iphone-nextr.png" />
+									<img src="images/iphone-nextr.jpg" />
 								</div>
 							</div>
 							<!--<img src="images/iphone-container.png" id="iphone"/>-->
@@ -191,17 +196,6 @@
 									Haltestellen in nextr Nähe
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="close1" class="show-on-desktop">
-			<div class="container">
-				<div class="row">
-					<div class="span16">
-						<div id="home-close" class="heading">
-							<h1>Homescreen</h1>
 						</div>
 					</div>
 				</div>
@@ -258,17 +252,6 @@
 			</div>
 			
 			
-		</div>
-		<div id="close2" class="show-on-desktop">
-			<div class="container">
-				<div class="row">
-					<div class="span16">
-						<div id="verbindungen-close" class="heading">
-							<h1>Verbindungssuche</h1>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 		
 		<div id="howitworksmobile" class="show-on-mobile">
@@ -468,7 +451,7 @@
 							<p>
 								nextr zeigt dir schnell und einfach den Weg durch jede
 								deutsche Stadt, mit jedem öffentlichen Verkehrsmittel.
-								Hol dir nextr im App Store für 1,79€.
+								Hol dir nextr im App Store.
 							</p>
 						</div>
 					</div>
@@ -493,7 +476,7 @@
 							<p id="footer-feedback">
 								Ihr wollt mehr über unsere App erfahren, oder habt 
 								Kritik, Feedback und Anregungen. Dann schreibt uns
-								einfach eine Mail an feedback@nextr.info
+								einfach eine Mail an <a href="mailto:feedback@nextr.info">feedback@nextr.info</a>
 							</p>
 							<br/>
 							<br/>
@@ -503,7 +486,7 @@
 								Verfügung gestellten Daten übernommen werden.
 							</p>
 							<p id="footer-claimer">
-								Titelfoto von Michael Liesegang. www.tafelzwerk.de
+								Titelfoto von Michael Liesegang. <a href="http://www.tafelzwerk.de">www.tafelzwerk.de</a>
 							</p>
 							
 						</div>
@@ -536,7 +519,14 @@
     	<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script src="js/jQueryRotate.2.2.js"></script>
     	<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-dropdown.js"></script>
 		<script src="js/custom-ck.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
+				
+			});
+		</script>
    	
 	</body>
 </html>

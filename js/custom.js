@@ -1,18 +1,46 @@
   $('#video').click(function(){
-		if($("#video-content").height() === 656){
+		if($("#video-content").height() === 656 || $("#video-content").height() === 266 || $("#video-content").height() === 286){
 			$(".bg-down").css({'margin-top': '0px'});
 			$(".video-down").css("height","0px");
 			$("#video-content").empty();
 		}
 		else{
-			$(".bg-down").css({'margin-top': '656px'});
-			$(".video-down").css("height","656px");
-			$("#video-content").append('<div class="container"></div>');
+			if($(window).width() <= 320){
+			
+				$(".bg-down").css({'margin-top': '266px'});
+				$(".video-down").css("height","266px");
+				$("#video-content").append('<div class="container"></div>');
+				
+			}
+			else if($(window).width() <= 480 && $(window).width() > 320){
+				$(".bg-down").css({'margin-top': '286px'});
+				$(".video-down").css("height","286px");
+				$("#video-content").append('<div class="container"></div>');
+			}
+			else{
+				$(".bg-down").css({'margin-top': '656px'});
+				$(".video-down").css("height","656px");
+				$("#video-content").append('<div class="container"></div>');
+			}
 			
 			$('#video-content div.container').delay(400).queue(function () {
 
+				if($(window).width() <= 320){
+					$(this).append('<div class="row"><div class="span16"><div class="video"><iframe src="http://player.vimeo.com/video/8709313?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="" height="" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div>');
+					$(this).append('<div class="row"  style=""><div class="span16"><div class="video-close"><a href="#" id="video-close"><img src="images/video-close.png"/></div></div></div>');
+					
+				}
+				else if($(window).width() <= 480 && $(window).width() > 320){
+					$(this).append('<div class="row"><div class="span16"><div class="video"><iframe src="http://player.vimeo.com/video/8709313?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="" height="" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div>');
+					$(this).append('<div class="row"  style=""><div class="span16"><div class="video-close"><a href="#" id="video-close"><img src="images/video-close.png"/></div></div></div>');
+					
+				}
+				else{
 					$(this).append('<div class="row"><div class="span16"><div class="video"><iframe src="http://player.vimeo.com/video/8709313?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="960" height="540" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div>');
-				$(this).append('<div class="row"  style="padding-right:35px;"><div class="span16"><div class="video-close"><a href="#" id="video-close"><img src="images/video-close.png"/></div></div></div>');
+					$(this).append('<div class="row"  style="padding-right:35px;"><div class="span16"><div class="video-close"><a href="#" id="video-close"><img src="images/video-close.png"/></div></div></div>');
+				
+				}
+				
 			});
 		}
   });
@@ -36,9 +64,7 @@
   });
 
 	$('#video-content').on('click', '#video-close', function(){
-		if($("#video-content").height() === 656){
-			console.log("TEST");
-			
+		if($("#video-content").height() === 656 || $("#video-content").height() === 266 || $("#video-content").height() === 286){			
 			$(".bg-down").css({'margin-top': '0px'});
 			$(".video-down").css("height","0px");
 			$("#video-content").empty();
@@ -172,7 +198,7 @@
   $("#detail").mouseover(function() {
 		$("#detail h3").css("color", "#00d9bd");
 		
-		$("#iphone-center2").append('<img src="images/howitworks2-coniphone-detail.png" id="iphone-over" style="position:absolute;display:block;margin:0px auto;margin-top: 50px;z-index: 1;" />');
+		$("#iphone-center2").append('<img src="images/howitworks2-coniphone-detail.png" id="iphone-over" style="position:absolute;display:block;margin:0px auto;margin-top: 50px;margin-left:1px;z-index: 1;" />');
 		$("#verbindungen").css("opacity","0.4");
 		$("#scroll").css("opacity","0.4");
 		$("#close").css("opacity","0.4");
