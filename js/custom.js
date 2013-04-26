@@ -26,17 +26,17 @@
 			$('#video-content div.container').delay(400).queue(function () {
 
 				if($(window).width() <= 320){
-					$(this).append('<div class="row"><div class="span16"><div class="video"><iframe src="http://player.vimeo.com/video/8709313?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="" height="" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div>');
+					$(this).append('<div class="row"><div class="span16"><div class="video"><iframe src="http://player.vimeo.com/video/64794635?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="" height="" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div>');
 					$(this).append('<div class="row"  style=""><div class="span16"><div class="video-close"><a href="#" id="video-close"><img src="images/video-close.png"/></div></div></div>');
 					
 				}
 				else if($(window).width() <= 480 && $(window).width() > 320){
-					$(this).append('<div class="row"><div class="span16"><div class="video"><iframe src="http://player.vimeo.com/video/8709313?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="" height="" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div>');
+					$(this).append('<div class="row"><div class="span16"><div class="video"><iframe src="http://player.vimeo.com/video/64794635?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="" height="" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div>');
 					$(this).append('<div class="row"  style=""><div class="span16"><div class="video-close"><a href="#" id="video-close"><img src="images/video-close.png"/></div></div></div>');
 					
 				}
 				else{
-					$(this).append('<div class="row"><div class="span16"><div class="video"><iframe src="http://player.vimeo.com/video/8709313?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="960" height="540" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div>');
+					$(this).append('<div class="row"><div class="span16"><div class="video"><iframe src="http://player.vimeo.com/video/64794635?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="960" height="540" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div>');
 					$(this).append('<div class="row"  style="padding-right:35px;"><div class="span16"><div class="video-close"><a href="#" id="video-close"><img src="images/video-close.png"/></div></div></div>');
 				
 				}
@@ -57,7 +57,7 @@
 			$("#video-content").append('<div class="container"></div>');
 			
 			$('#video-content div.container').delay(400).queue(function () {
-				$(this).append('<div class="row"><div class="span16"><div class="video"><iframe src="http://player.vimeo.com/video/8709313?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="960" height="540" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div>');
+				$(this).append('<div class="row"><div class="span16"><div class="video"><iframe src="http://player.vimeo.com/video/64794635?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="960" height="540" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div></div>');
 				$(this).append('<div class="row"  style="padding-right:35px;"><div class="span16"><div class="video-close"><a href="#" id="video-close"><img src="images/video-close.png"/></div></div></div>');
 			});
 		}
