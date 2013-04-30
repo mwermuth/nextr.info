@@ -155,10 +155,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', end
 	h1{
 	font-size:40px;
 	-webkit-font-smoothing: antialiased;
-	font-family:"DINPro-Bold";
-	//font-family: "adelle-1","adelle-2",serif;
-	//font-style: normal;
-	//font-weight: 700;
+	//font-family:"DINPro-Bold";
+	font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+	font-style: normal;
+	font-weight: 700;
 	
 	}
 	margin-top:220px;
@@ -169,10 +169,10 @@ p#subhero{
 margin-top: 30px;
 font-size: 18px;
 -webkit-font-smoothing: antialiased;
-	font-family:"DINPro-Light";
-	//font-family: "adelle-1","adelle-2",serif;
-	//font-style: normal;
-	//font-weight: 300;
+	//font-family:"DINPro-Light";
+	font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+	font-style: normal;
+	font-weight: 300;
 color: #ffffff;
 }
 
@@ -200,6 +200,9 @@ display: block;
 		@include list-reset();
 		@include list-horizontal();
 		margin-top:5px;
+		
+
+		
 		> li {
 			
 			> a {
@@ -210,6 +213,13 @@ display: block;
 		
 		}
 }
+
+		@-moz-document url-prefix() {
+		#social-links{
+		
+				margin-top:-90px !important;
+				}
+		}
 
 #social-download{
 width:260px;
@@ -289,21 +299,22 @@ height:54px;
 	max-width:1200px;
 	position:relative;
 	margin: 0 auto;
+	margin-top:-30px;
 
 }
 
 #features{
 	
-	margin-top:50px;
+	margin-top:70px;
 	text-align:center;
 	
 	h1{
 		font-size: 48px;
 		-webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 	}
 
 }
@@ -417,20 +428,20 @@ float:left;
 
 #haltestellen{
 	-webkit-font-smoothing: antialiased;
-			font-family:"DINPro-Regular";
-			//font-family: "adelle-1","adelle-2",serif;
-			//font-style: normal;
-			//font-weight: 400;
+			//font-family:"DINPro-Regular";
+			font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+			font-style: normal;
+			font-weight: 400;
 			cursor: hand; 
 			cursor: pointer; 
 		color: #a3a3a3;
 
 		>h3{
 			-webkit-font-smoothing: antialiased;
-			font-family:"DINPro-Regular";
-			//font-family: "adelle-1","adelle-2",serif;
-			//font-style: normal;
-			//font-weight: 400;
+			//font-family:"DINPro-Regular";
+			font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+			font-style: normal;
+			font-weight: 400;
 		}
 }
 
@@ -440,19 +451,19 @@ margin-right:20px;
 cursor: hand; 
 cursor: pointer; 
 -webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 		color: #a3a3a3;
 		
 		
 		> h3{
 			-webkit-font-smoothing: antialiased;
-			font-family:"DINPro-Regular";
-			//font-family: "adelle-1","adelle-2",serif;
-			//font-style: normal;
-			//font-weight: 400;
+			//font-family:"DINPro-Regular";
+			font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+			font-style: normal;
+			font-weight: 400;
 		}
 }
 
@@ -461,18 +472,18 @@ margin-left:-20px;
 cursor: hand; 
 cursor: pointer; 
 -webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 		color: #a3a3a3;
 		
 		> h3{
 			-webkit-font-smoothing: antialiased;
-			font-family:"DINPro-Regular";
-			//font-family: "adelle-1","adelle-2",serif;
-			//font-style: normal;
-			//font-weight: 400;
+			//font-family:"DINPro-Regular";
+			font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+			font-style: normal;
+			font-weight: 400;
 		}
 }
 
@@ -482,18 +493,18 @@ margin-left:10px;
 cursor: hand; 
 cursor: pointer; 
 -webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 		color: #a3a3a3;
 		
 		> h3{
 			-webkit-font-smoothing: antialiased;
-			font-family:"DINPro-Regular";
-			//font-family: "adelle-1","adelle-2",serif;
-			//font-style: normal;
-			//font-weight: 400;
+			//font-family:"DINPro-Regular";
+			font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+			font-style: normal;
+			font-weight: 400;
 		}
 
 }
@@ -504,18 +515,18 @@ margin-left:10px;
 cursor: hand; 
 cursor: pointer; 
 -webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 		color: #a3a3a3;
 		
 		> h3{
 			-webkit-font-smoothing: antialiased;
-			font-family:"DINPro-Regular";
-			//font-family: "adelle-1","adelle-2",serif;
-			//font-style: normal;
-			//font-weight: 400;
+			//font-family:"DINPro-Regular";
+			font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+			font-style: normal;
+			font-weight: 400;
 		}
 }
 
@@ -530,10 +541,10 @@ text-align:center;
 margin-top:25px;
  > h1{
  	-webkit-font-smoothing: antialiased;
-	font-family:"DINPro-Regular";
-	//font-family: "adelle-1","adelle-2",serif;
-	//font-style: normal;
-	//font-weight: 400;
+	//font-family:"DINPro-Regular";
+	font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+	font-style: normal;
+	font-weight: 400;
  	font-size: 24px;
 	color: #a3a3a3;
  	
@@ -604,20 +615,20 @@ float:left;
 
 #verbindungen	{
 	-webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 		cursor: hand; 
 		cursor: pointer; 
 		color: #a3a3a3;
 		
 		> h3{
 			-webkit-font-smoothing: antialiased;
-			font-family:"DINPro-Regular";
-			//font-family: "adelle-1","adelle-2",serif;
-			//font-style: normal;
-			//font-weight: 400;
+			//font-family:"DINPro-Regular";
+			font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+			font-style: normal;
+			font-weight: 400;
 		}
 }
 
@@ -627,37 +638,37 @@ margin-right:20px;
 cursor: hand; 
 cursor: pointer; 
 -webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 		color: #a3a3a3;
 		
 		> h3{
 			-webkit-font-smoothing: antialiased;
-			font-family:"DINPro-Regular";
-			//font-family: "adelle-1","adelle-2",serif;
-			//font-style: normal;
-			//font-weight: 400;
+			//font-family:"DINPro-Regular";
+			font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+			font-style: normal;
+			font-weight: 400;
 		}
 }
 
 #detail{
 	-webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 		cursor: hand; 
 		cursor: pointer; 
 		color: #a3a3a3;
 		margin-left:10px;
 		> h3{
 			-webkit-font-smoothing: antialiased;
-			font-family:"DINPro-Regular";
-			//font-family: "adelle-1","adelle-2",serif;
-			//font-style: normal;
-			//font-weight: 400;
+			//font-family:"DINPro-Regular";
+			font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+			font-style: normal;
+			font-weight: 400;
 		}
 }
 
@@ -671,18 +682,18 @@ cursor: pointer;
 margin-top:70px;
 margin-left:10px;
 		-webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 		color: #a3a3a3;
 		
 		> h3{
 			-webkit-font-smoothing: antialiased;
-			font-family:"DINPro-Regular";
-			//font-family: "adelle-1","adelle-2",serif;
-			//font-style: normal;
-			//font-weight: 400;
+			//font-family:"DINPro-Regular";
+			font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+			font-style: normal;
+			font-weight: 400;
 		}
 }
 
@@ -698,10 +709,10 @@ text-align:center;
 
  > h1{
  	-webkit-font-smoothing: antialiased;
-	font-family:"DINPro-Regular";
-	//font-family: "adelle-1","adelle-2",serif;
-	//font-style: normal;
-	//font-weight: 400;
+	//font-family:"DINPro-Regular";
+	font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+	font-style: normal;
+	font-weight: 400;
  	font-size: 24px;
 	color: #a3a3a3;
  	
@@ -714,20 +725,20 @@ text-align:center;
 	
 	> h1{
 		-webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 		font-size: 48px;
 	}
 	
 	> p{
 		font-size: 18px;
 		-webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";	
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";	
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 		background-color:white;
 	}
 }
@@ -847,20 +858,20 @@ margin-top:25px;
 	> h1{
 		font-size: 30px;
 		-webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 	}
 	> p{
 		width:55%;
 		color: grey;
 		font-size: 15px;
 		-webkit-font-smoothing: antialiased;
-		font-family:"DINPro-Regular";
-		//font-family: "adelle-1","adelle-2",serif;
-		//font-style: normal;
-		//font-weight: 400;
+		//font-family:"DINPro-Regular";
+		font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+		font-style: normal;
+		font-weight: 400;
 	}
 }
 
@@ -895,10 +906,10 @@ footer{
 	color: white;
 	font-size:30px;
 	-webkit-font-smoothing: antialiased;
-	font-family:"DINPro-Light";
-	//font-family: "adelle-1","adelle-2",serif;
-	//font-style: normal;
-	//font-weight: 300;
+	//font-family:"DINPro-Light";
+	font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+	font-style: normal;
+	font-weight: 300;
 }
 
 #footer-feedback{	
@@ -906,10 +917,10 @@ footer{
 	font-size:18px;
 	margin-bottom:30px;
 	-webkit-font-smoothing: antialiased;
-	font-family:"DINPro-Light";
-	//font-family: "adelle-1","adelle-2",serif;
-	//font-style: normal;
-	//font-weight: 300;
+	//font-family:"DINPro-Light";
+	font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+	font-style: normal;
+	font-weight: 300;
 	
 	> a{
 		color:white;
@@ -922,10 +933,10 @@ footer{
 	font-size:11px;
 	line-height:14px;
 	-webkit-font-smoothing: antialiased;
-	font-family:"DINPro-Regular";
-	//font-family: "adelle-1","adelle-2",serif;
-	//font-style: normal;
-	//font-weight: 400;
+	//font-family:"DINPro-Regular";
+	font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
+	font-style: normal;
+	font-weight: 400;
 	
 	> a{
 		color:black;
@@ -941,6 +952,11 @@ footer{
 
 	#mwermuth{
 		margin-top:20px;
+		width:157px;
+	}
+	
+	#ober{
+	width:145px;
 	}
 	
 	
